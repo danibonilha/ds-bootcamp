@@ -7,6 +7,17 @@
 //   reverse('Greetings!') === '!sgniteerG'
 
 /**
+ * WARN:
+ * split('') should not be used in robust reverse 
+ * string solutions because It doesn't work if the string 
+ * contains grapheme clusters.
+ * As documented: 
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split#Reversing_a_String_using_split()
+ */
+
+
+
+/**
  * Cleaner Solution
  * split() returns an array with each char of the string
  * reverse() returns the reversed array
